@@ -1,0 +1,28 @@
+<svg width="3000" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+    .text-style {
+      font-family: 'Open Sans Condensed', sans-serif;
+    }
+    </style>
+    <script>
+      console.log("wippy")
+    </script>
+  </defs>
+  <g transform="matrix(0.7071067811865476,-0.7071067811865475,0.7071067811865475,0.7071067811865476,-150.86309447890176,320.78427124746185)">
+    <line x1="184" y1="0" x2="184" y2="150%" stroke-opacity="1" stroke="rgba(213,23,32, 1)" stroke-width="12"></line>
+    <line x1="118" y1="500" x2="118" y2="150%" stroke-opacity="1" stroke="rgba(213,23,32, 1)" stroke-width="12"></line>
+    <line x1="35" y1="0" x2="35" y2="150%" stroke-opacity="1" stroke="rgba(38,117,177, 1)" stroke-width="120"></line>
+    <line x1="35" y1="500" x2="35" y2="150%" stroke-opacity="1" stroke="rgba(243,235,58, 1)" stroke-width="120"></line>
+    <line x1="163" y1="0" x2="163" y2="455" stroke="#000000" stroke-width="9"></line>
+    <line x1="-42.4" y1="0" x2="-42.4" y2="460" stroke="#000000" stroke-width="9"></line>
+    <rect width="100%" height="70" x="-53" y="430" fill="#fff"></rect>
+    <line x1="585" y1="-318" x2="585" y2="194" stroke="#000000" stroke-width="10" transform="matrix(6.123233995736766e-17,1,-1,6.123233995736766e-17,700,-100)"></line>
+    <text font-size="100" x="-53" y="490">
+      <tspan class="text-style">kevin m ryan</tspan>
+    </text>
+    <text font-size="55" x="20" y="644" transform="matrix(6.123233995736766e-17,1,-1,6.123233995736766e-17,772.03125,479.96875)">
+      <tspan class="text-style">1971- ****</tspan>
+    </text>
+  </g>
+</svg>

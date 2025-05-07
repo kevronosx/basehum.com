@@ -1,0 +1,202 @@
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.stage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica neue, sans-serif;
+  font-weight: 100;
+  color: #fff;
+    background-color: #222;
+}
+
+.background-shell {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  will-change: background;
+  opacity: 1;
+  /*transition: background 500ms ease-in-out;*/
+}
+
+a {
+  text-decoration: none
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scene {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.info,
+.refs {
+  position: relative;
+}
+
+.info {
+  min-height: 400px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  background: rgba(166, 41, 22, 0.1) url('../img/backgrounds/fudo_outline_2_opacity.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.refs {
+  flex: 2;
+  background: rgba(255, 255, 243, 0.1);
+}
+
+.me-photo {
+  width: 100%;
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.photo {
+  height: 100px;
+  margin-bottom: 10px;
+  background: url(../img/kevin.fudo.ryan_cropped.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.8);
+  -webkit-filter: saturate(10%);
+}
+
+.side-nav {
+  margin: 10px;
+}
+
+.heading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+  letter-spacing: 8px;
+}
+
+.external-links li {
+  background: rgba(0, 0, 0, 0.6);
+  margin: 5px auto;
+}
+
+.external-links a {
+  color: #fff;
+  display: block;
+  padding: 5px;
+}
+
+.external-links li:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.branding,
+.tagline {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.branding {
+  top: 13px;
+  left: 15px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 8px;
+}
+
+.ronin {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.tagline {
+  width: 100%;
+  bottom: 90px;
+  text-align: center;
+  left: 0;
+  letter-spacing: 8px;
+}
+
+.hash-lines {
+  letter-spacing: 4px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.footer {
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.social {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.social li {
+  width: 60px;
+  height: 60px;
+}
+
+@media all and (max-width:768px) {
+  .scene {
+    flex-direction: column;
+  }
+  .social li {
+    width: 40px;
+    height: 40px;
+  }
+  .info {
+    min-height: 400px;
+  }
+}
+
+@media all and (max-height:414px) {
+  .info {
+    min-height: 200px;
+  }
+}
